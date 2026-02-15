@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head><title>Project 2 Registration</title></head>
+<head>
+    <title>Registration & Upload</title>
+</head>
 <body>
-    <h2>User Registration</h2>
+    <h2>Step 4a & 4b: User Registration</h2>
     <form action="/register" method="POST">
-        First Name: <input type="text" name="firstname" required><br><br>
-        Last Name: <input type="text" name="lastname" required><br><br>
-        Email: <input type="text" name="email" required><br><br>
-        Address: <input type="text" name="address" required><br><br>
-        <input type="submit" value="Register User">
+        Username: <input type="text" name="username" required><br><br>
+        Password: <input type="password" name="password" required><br><br>
+        First Name: <input type="text" name="firstname"><br><br>
+        Last Name: <input type="text" name="lastname"><br><br>
+        Email: <input type="text" name="email"><br><br>
+        Address: <input type="text" name="address"><br><br>
+        <input type="submit" value="Register & Store">
     </form>
+
+    <hr>
+    <h2>Step 4e: Upload Limerick.txt</h2>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload & Count">
+    </form>
+    
+    <p><a href="/login_page">Go to Step 4d: Re-login Page</a></p>
 </body>
 </html>
