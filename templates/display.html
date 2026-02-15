@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Information Display</title>
+</head>
+<body>
+    <h1>Step 4c: Display Information</h1>
+    <p><b>First Name:</b> {{ fn }}</p>
+    <p><b>Last Name:</b> {{ ln }}</p>
+    <p><b>Email:</b> {{ email }}</p>
+    <p><b>Address:</b> {{ addr }}</p>
+
+    {% if word_count %}
+    <hr>
+    <h3>Step 4e: File Analysis</h3>
+    <p>The word count for {{ filename }} is: <b>{{ word_count }}</b></p>
+    <a href="/download/{{ filename }}"><button>Download File</button></a>
+    {% endif %}
+
+    <br><br>
+    <a href="/">Back to Home</a>
+</body>
+</html>
